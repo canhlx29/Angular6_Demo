@@ -1,0 +1,11 @@
+<h1
+  [class.with-border]="withBorder"
+  [style.color]="textColor"
+  (mouseover)="onTextMouseOver()"
+  (mouseout)="onTextMouseOut()"
+>
+  Hi Component!
+</h1>
+<button (click)="onButtonClick()">
+  {{ withBorder ? "Hide" : "Show" }} Border
+</button>
