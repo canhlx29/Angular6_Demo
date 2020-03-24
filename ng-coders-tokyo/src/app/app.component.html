@@ -1,2 +1,3 @@
-<app-hi></app-hi>
-
+<h1>hello {{ title }}!</h1>
+<button (click)="sendTextToChild()">Send Parent</button>
+<app-hi [text]="title" (clickBtn)="changedFromHiComponent($event)"></app-hi>
